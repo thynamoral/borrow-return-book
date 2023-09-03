@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(51,51,153,1) 0%, rgba(255,0,204,1) 100%);;
+}
+h1 {
+    color: white;
+}
+#form {
+    width: 290px;
+    color: white;
+    background-color: rgb(4,11,20);
+    padding: 30px 45px;
+    padding-left: 25px;
+    border-radius: 10px;
+}
+input:hover, #submit:hover {
+    cursor: pointer;
+}
+#choose_member {
+    margin-bottom: 15px;
+}
+.each_date {
+    margin-bottom: 15px;
+}
+.date_input, #submit {
+    width: 100%;
+    padding: 5px;
+    border: 0;
+}
+#submit {
+    margin-top: 25px;
+    width: 301px;
+}
+#submit:hover {
+    background-color: darkviolet;
+    color: white;
+}
+#output {
+    margin-top: 20px;
+}
+#success {
+    color: #4BB543;
+}
+
+.hide {
+    display: none;
+}

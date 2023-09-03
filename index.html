@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบยืมและคืนหนังสือ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>ระบบยืมและคืนหนังสือ</h1>
+    <div id="form">
+        <h4>ประเภทสมาชิก</h4>
+        <div id="choose_member">
+            <div class="each_member">
+                <input type="radio" name="member_type" value="under_grade" id="under_grade">
+                <label for="under_grade">Undergraduate Student</label>
+            </div>
+            <div class="each_member">
+                <input type="radio" name="member_type" value="post_grade" id="post_grade">
+                <label for="post_grade">Postgraduate Student</label>
+            </div>
+            <div class="each_member">
+                <input type="radio" name="member_type" value="teacher" id="teacher">
+                <label for="teacher">Teacher</label>
+            </div>  
+        </div>
+        <div id="dates">
+            <div class="each_date">
+                <label for="borrow_date">วันที่ยืม</label> <br>
+                <input class="date_input" type="date" name="borrow_date" id="borrow_date">
+            </div>
+            <div id="due_div" class="each_date hide">
+                <label class="hide" id="due_label">จะต้องคืนภายใน</label> <br>
+                <p class="hide" id="due_date"></p>
+            </div>
+            <div class="each_date">
+                <label for="return_date">วันที่มาคืน</label> <br>
+                <input class="date_input" type="date" name="return_date" id="return_date">
+            </div>
+        </div>
+        <button id="submit" type="button">Submit</button>
+        <div id="output" class="hide">
+            <p id="success" class="hide">Return Completed</p>
+            <p id="overDue" class="hide"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
